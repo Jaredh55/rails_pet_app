@@ -18,4 +18,9 @@ Rails.application.routes.draw do
     delete '/sitters/:id' => 'sitters#destroy'
   end
 
+  namespace :api do
+    post '/sitters' => 'sitters#create'
+    patch '/sitters/:id' => 'sitters#update'
+  end
+
 end
