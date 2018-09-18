@@ -10,6 +10,7 @@ class Api::PetownersController < ApplicationController
   def show
     petowner_id = params[:id]
     @petowner = Petowner.find(petowner_id)
+
     render 'show.json.jbuilder'
 
   end

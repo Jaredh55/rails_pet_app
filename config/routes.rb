@@ -19,8 +19,13 @@ Rails.application.routes.draw do
   end
 
   namespace :api do
-    post '/sitters' => 'sitters#create'
-    patch '/sitters/:id' => 'sitters#update'
+    post '/swipes' => 'swipes#create'
+    patch '/swipes/:id' => 'swipes#update'
+  end
+
+  namespace :api do
+    post '/ratings' => 'ratings#create'
+    patch '/ratings/:id' => 'ratings#update'
   end
 
 end
