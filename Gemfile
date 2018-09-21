@@ -23,6 +23,10 @@ gem 'paperclip'
 gem 'aws-sdk', '~> 2.3'
 gem 'figaro'
 
+gem 'knock'
+gem 'bcrypt', '~> 3.1.7'
+
+
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
