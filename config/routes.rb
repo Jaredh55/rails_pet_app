@@ -13,6 +13,15 @@ Rails.application.routes.draw do
     delete '/petowners/:id' => 'petowners#destroy'
   end
 
+  namespace :client do
+    get '/petowners' => 'petowners#index'
+    get '/petowners/new' => 'petowners#new'
+    post '/petowners' => 'petowners#create'
+    get '/petowners/:id' => 'petowners#show'
+    patch '/petowners/:id' => 'petowners#update'
+    delete '/petowners/:id' => 'petowners#destroy'
+  end
+
   namespace :api do
     get '/sitters' => 'sitters#index'
     get '/sitters/:id' => 'sitters#show'
